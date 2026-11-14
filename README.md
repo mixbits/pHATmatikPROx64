@@ -216,7 +216,6 @@ iZotope's licence for Phatmatik PRO ([extracted/app/License_en.rtf](extracted/ap
 | `extracted\` | The unpacked installer. The main setup shows `extracted\app\License_en.rtf` as its licence page, and `tests\compare.ps1 -Phatmatik` loads the plug-in DLL from here. | `build.ps1`, or `scripts\unpack-installer.ps1` once the file above is in `dist\` |
 | `build\` | The compiled bridge, helper, and test tools. | `.\build.ps1`, which fills this folder while it builds the setup. `.\build.ps1 -CompileOnly` compiles and stops there. |
 | `pHATmatik_PRO_v1_52_x64_Setup.exe` | The setup program to double-click. It contains your copy of iZotope's installer and the bridge. | `build.ps1` |
-| `images\screenshot.png` | A capture of iZotope's plug-in window. | Not produced by the scripts. Kept on the machine where it was taken, and left out of the repository. |
 
 `build.ps1` also writes `dist\pHATmatik_PRO_x64_Bridge_Only_Setup.exe`. That one contains no iZotope files. innoextract 1.9, which does the unpacking, is included at `tools\innoextract`.
 
@@ -268,7 +267,7 @@ It is the test host built without a console: a convenience for trying the plug-i
 | `tools/innoextract/` | innoextract 1.9, used to unpack iZotope's installer. Its licence is in that folder. |
 | `tools/draw-app-icon.ps1`, `tools/make-icon.ps1` | Draw the project icon and build its multi-size `.ico`. |
 | `tools/audio-meter.ps1` | Says whether the Windows output is muted and which programs are sending sound to it. |
-| `images/` | `app-icon.png` (the project's own icon, shown at the top of this page) and `app-icon.ico` (the same icon in nine sizes, for Windows). `screenshot.png` is a capture of iZotope's plug-in and is left out of the repository. |
+| `images/` | `app-icon.png` (the project's own icon, shown at the top of this page), `app-icon.ico` (the same icon in nine sizes, for Windows), and `screenshot.png` (shown under [Screenshot](#screenshot)). |
 | `logs/changelog.md`, `debug/troubleshooting.md` | Project documentation. |
 
 ## Limits
@@ -286,4 +285,7 @@ Three behaviours belong to the plug-in itself and are the same without the bridg
 
 ## Screenshot
 
-`images\screenshot.png` is a capture of pHATmatik PRO v1.52 running through the 64-bit bridge on this machine. It shows iZotope's plug-in, so it is left out of the repository. iZotope and Phatmatik are trademarks of iZotope, Inc., used here only to say which plug-in this bridge is for; the bridge is not an iZotope product. The icon at the top of this page was drawn for this project and contains no iZotope artwork.
+pHATmatik PRO v1.52 running through the 64-bit bridge:
+
+![pHATmatik PRO running through the 64-bit bridge](images/screenshot.png)
+The screenshot shows iZotope's plug-in. iZotope and Phatmatik are trademarks of iZotope, Inc., used here only to say which plug-in this bridge is for; the bridge is not an iZotope product. The icon at the top of this page was drawn for this project and contains no iZotope artwork.
