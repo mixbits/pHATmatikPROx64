@@ -1,0 +1,13 @@
+# Left out of the repository. build.ps1 recreates the generated ones
+# from your own copy of iZotope_pHATmatik_PRO_v1_52.exe.
+# build\ is produced by build.ps1 and the test scripts.
+# extracted\ is produced by scripts\unpack-installer.ps1.
+# The two .exe lines are iZotope's installer and the setup program that contains it.
+# images\screenshot.png is a capture of iZotope's plug-in window.
+/build/
+/extracted/
+/dist/iZotope_pHATmatik_PRO_v1_52.exe
+/pHATmatik_PRO_v1_52_x64_Setup.exe
+/images/screenshot.png
+/AGENTS.md
+/tasks.md

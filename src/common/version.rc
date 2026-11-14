@@ -1,0 +1,44 @@
+// Version resource shared by the bridge DLL and the helper. BRIDGE_DLL selects which one.
+#include <winver.h>
+
+#define VER_MAJOR 1
+#define VER_MINOR 0
+#define VER_PATCH 1
+#define VER_STR "1.0.1"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION VER_MAJOR, VER_MINOR, VER_PATCH, 0
+PRODUCTVERSION VER_MAJOR, VER_MINOR, VER_PATCH, 0
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+FILEFLAGS 0
+FILEOS VOS_NT_WINDOWS32
+#ifdef BRIDGE_DLL
+FILETYPE VFT_DLL
+#else
+FILETYPE VFT_APP
+#endif
+FILESUBTYPE 0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Unofficial community bridge - not an iZotope product"
+#ifdef BRIDGE_DLL
+            VALUE "FileDescription", "pHATmatik PRO 64-bit bridge (VST2 plug-in)"
+            VALUE "OriginalFilename", "iZotope pHATmatik PRO.dll"
+#else
+            VALUE "FileDescription", "pHATmatik PRO 64-bit bridge (32-bit helper)"
+            VALUE "OriginalFilename", "pHATmatikBridgeHost32.exe"
+#endif
+            VALUE "FileVersion", VER_STR
+            VALUE "ProductName", "pHATmatik PRO 64-bit Bridge"
+            VALUE "ProductVersion", VER_STR
+            VALUE "LegalCopyright", "Bridge code only. pHATmatik PRO is (c) iZotope, Inc. and is not included in this file."
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END

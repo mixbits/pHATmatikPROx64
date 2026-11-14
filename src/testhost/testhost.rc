@@ -1,0 +1,3 @@
+// Icon for the window, taskbar button and .exe file of the test host and of the windowed program.
+// app.ico is generated from images\app-icon.png by tools\make-icon.ps1 during the build.
+1 ICON "app.ico"

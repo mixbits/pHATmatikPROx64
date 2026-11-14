@@ -1,0 +1,22 @@
+pHATmatik PRO 64-bit Bridge
+
+USING IT
+
+  1. Start your 64-bit host and make it rescan its VST2 plug-ins. The bridge was installed in the 64-bit VST folder you chose, as "iZotope pHATmatik PRO.dll".
+  2. Load "iZotope pHATmatik PRO" (some hosts list it as "PhatmatikPRO").
+  3. The plug-in's own authorization window appears, as it does on a 32-bit system. Authorize with your serial number, or continue in demo mode. If nothing seems to happen when you load the plug-in, look for this window behind the host.
+
+Projects saved with the 32-bit plug-in open with the bridge: it reports the same plug-in ID and uses the same preset data.
+
+GOOD TO KNOW
+
+  - Each instance of the plug-in runs in its own helper process, "pHATmatikBridgeHost32.exe". It starts and stops with the instance.
+  - While a pHATmatik dialog is open (authorization, file open), the host's window waits, as it would with any modal dialog.
+  - If the plug-in does not load, the reason is written to the file pHATmatikBridge.log in your temporary folder (%TEMP%).
+  - Do not point your 64-bit host at the folder holding the original 32-bit DLL. The host only needs the bridge.
+
+REMOVING IT
+
+"pHATmatik PRO 64-bit Bridge" in Windows' installed apps removes the bridge. The original plug-in has its own entry, "iZotope pHATmatik PRO", and is removed separately.
+
+This bridge is unofficial. It is not made, endorsed or supported by iZotope. pHATmatik PRO is (c) iZotope, Inc.

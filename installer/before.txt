@@ -1,0 +1,14 @@
+WHAT THIS INSTALLS
+
+iZotope pHATmatik PRO v1.52 is a 32-bit VST2 plug-in from 2007. 64-bit hosts cannot load 32-bit plug-ins. This setup installs:
+
+  1. The original plug-in, unchanged, using iZotope's own installer (skipped if it is already installed).
+  2. A 64-bit bridge: a small 64-bit plug-in with the same name, which your host loads. It runs the original plug-in in a 32-bit helper process and passes audio, MIDI, parameters, presets and the plug-in's window between the two.
+
+The sound and behaviour are those of the original plug-in, because the original plug-in is what runs.
+
+LICENSING
+
+pHATmatik PRO is iZotope's software. You need your own licence to use it. Its authorization works exactly as before: the plug-in's authorization window appears when it is loaded, and it runs as a demo or with your serial number as it always did. The bridge does not change, bypass or interfere with authorization in any way.
+
+This package is unofficial. It is not made, endorsed or supported by iZotope.
