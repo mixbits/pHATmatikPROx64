@@ -288,4 +288,5 @@ Three behaviours belong to the plug-in itself and are the same without the bridg
 pHATmatik PRO v1.52 running through the 64-bit bridge:
 
 ![pHATmatik PRO running through the 64-bit bridge](images/screenshot.png)
+
 The screenshot shows iZotope's plug-in. iZotope and Phatmatik are trademarks of iZotope, Inc., used here only to say which plug-in this bridge is for; the bridge is not an iZotope product. The icon at the top of this page was drawn for this project and contains no iZotope artwork.
